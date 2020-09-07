@@ -4,7 +4,7 @@ records = [
     ("A" , 4) ,
     ("B" , 5)
         ]
-with open("student.csv" , "w" , newline = "") as csv_file:
+with open("student.csv" , "a+" , newline = "") as csv_file:
     writer = csv.writer(csv_file , delimiter = ",")
     writer.writerow(fields)
     writer.writerows(records)
